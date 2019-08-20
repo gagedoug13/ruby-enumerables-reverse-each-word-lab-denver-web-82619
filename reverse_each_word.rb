@@ -1,9 +1,9 @@
-def reverse_each_word(sentence)
-  new_array = sentence.split()
+def reverse_each_word(string)
+  new_array = string.split()
   i = 0
   final_array = []
-  while i < new_array.length
-    final_array.push(new_array[i].reverse)
+  new_array.collect do |string|
+    final_array.push(string.reverse)
   end
-  p final_array
+  p final_array  
 end
